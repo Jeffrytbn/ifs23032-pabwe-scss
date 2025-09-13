@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio — Nama Anda</title>
+
+  <!-- Ikon opsional -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- HASIL kompilasi SCSS Anda -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-user-circle"></i>
+          <span>Portofolio</span>
+        </div>
+        <nav class="nav">
+          <a href="#about">Tentang</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#edu-exp">Pendidikan & Pengalaman</a>
+          <a href="#projects">Proyek</a>
+          <a href="#certificates">Sertifikat</a>
+          <a href="#contact" class="cta-button">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===================== HERO / ABOUT ===================== -->
+    <section id="about" class="hero">
+  <div class="about-wrapper">
+    <img class="avatar"
+         src="img/foto delcom.jpg"
+         alt="Foto Jeffry Tambunan"
+          style="width:300px;height:300px;object-fit:cover;border-radius:50%;"/>
+    <div class="about-text">
+      <h1>Jeffry Tambunan — Web Developer & Mahasiswa S1 Informatika</h1>
+      <p>
+        Menguasai HTML/CSS (SCSS), Bootstrap 5.3, Tailwind CSS, Canva, Git/Github, Python, Figma
+      </p>
+      <div class="hero-buttons">
+        <a class="primary-button" href="mailto:jeffrytbn1206.com">📧 Email</a>
+        <a class="primary-button" href="https://wa.me/6281234567890">💬 WhatsApp</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="features">
+      <div class="section-title">
+        <h2>Keahlian</h2>
+        <!-- daftar cepat -->
+        <ul style="margin:1rem auto 0;max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.5rem;list-style:none;padding:0">
+          <li>HTML • CSS/SCSS</li>
+          <li>Bootstrap 5.3</li>
+          <li>Python (pandas, numpy)</li>
+          <li>Presentasi & Canva</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+
+      <div class="features-grid">
+  <!-- Front End -->
+  <article class="feature-card">
+    <i class="fa-solid fa-code"></i>
+    <h3>Front End</h3>
+    <p>Membangun UI responsif dengan HTML, SCSS, dan komponen Bootstrap.</p>
+  </article>
+
+  <!-- Data Analyst -->
+  <article class="feature-card">
+    <i class="fa-solid fa-chart-line"></i>
+    <h3>Data Analyst</h3>
+    <p>Pengolahan & visualisasi data</p>
+  </article>
+
+  <!-- Back End -->
+  <article class="feature-card">
+    <i class="fa-solid fa-server"></i>
+    <h3>Back End</h3>
+    <p>Mengerjakan logika aplikasi, menyimpan data, dan membuat fitur bisa digunakan.</p>
+  </article>
+
+  <!-- UI/UX -->
+  <article class="feature-card">
+    <i class="fa-solid fa-pen-ruler"></i>
+    <h3>UI/UX</h3>
+    <p>Riset pengguna, wireframe, dan desain antarmuka yang mudah digunakan.</p>
+  </article>
+</div>
+
+    <!-- ===================== EDUCATION & EXPERIENCE ===================== -->
+    <!-- Memakai layout .pricing-grid agar seragam dengan SCSS -->
+    <section id="edu-exp" class="pricing">
+      <div class="section-title">
+        <h2>Riwayat Pendidikan & Pengalaman</h2>
+        <p>Perjalanan akademik dan profesional yang relevan.</p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <article class="pricing-card popular">
+          <div class="plan-name">S1 Informatika — Institut Teknologi Del</div>
+          <div class="plan-price">2023–sekarang</div>
+          <ul class="plan-features">
+            <li> Organisasi : BEM</li>
+            <li></li>
+            <li></li>
+          </ul>
+
+        </article>
+
+       
+        <article class="pricing-card">
+          <div class="plan-name">SMA N 1 PANGKATAN</div>
+          <div class="plan-price">2020–2023 </div>
+          <ul class="plan-features">
+            <li></li>
+            <li></li>
+            <li>Organisasi: OSIS</li>
+          </ul>
+          </article>
+
+        <!-- Pengalaman kerja -->
+        <article class="pricing-card">
+          <div class="plan-name">Pengalaman Kerja</div>
+          <div class="plan-price"><span></span></div>
+          <ul class="plan-features">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+         
+        </article>
+      </div>
+    </section>
+
+   <!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="features">
+  <div class="section-title">
+    <h2>Proyek Saya</h2>
+  </div>
+
+  <div class="features-grid">
+    <!-- Proyek 1 -->
+    <article class="feature-card">
+      <!-- Ganti logo blog dengan ikon laptop-code -->
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>
+        <a href="https://jeffbootstrap.netlify.app/" target="_blank" rel="noopener">
+          Simple Blog (Bootstrap 5.3)
+        </a>
+      </h3>
+      <p>
+        List, detail, dan about page sesuai studi kasus; fokus pada UI/UX dan aksesibilitas.
+      </p>
+    </article>
+
+    <!-- Proyek 2 -->
+    <article class="feature-card">
+      <!-- Ganti logo brain dengan ikon mobile-screen -->
+      <i class="fa-solid fa-mobile-screen"></i>
+      <h3>
+        <a href="https://www.figma.com/design/wi8EDrs5C04zpx6ITwRPJG/Smart-Home-Control-App-UI-design--Community-?node-id=5-8&p=f&t=cnff5UyGVsuu5LyP-0" target="_blank" rel="noopener">
+          Desain Aplikasi Rumah Pintar
+        </a>
+      </h3>
+      <p>
+        Desain aplikasi rumah pintar ramah lingkungan menggunakan Figma.
+      </p>
+    </article>
+  </div>
+</section>
+
+
+    <!-- ===================== CERTIFICATES ===================== -->
+<section id="certificates" class="features" style="background-color:#f8f9fa">
+  <div class="section-title">
+    <h2>Sertifikat</h2>
+  </div>
+
+  <div class="features-grid">
+    <!-- Sertifikat 1 -->
+    <a href="https://drive.google.com/file/d/1DiiEfBc2ikuzTmPm73YdJnAqNvsmuMBu/view?usp=sharing"
+       target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+      <article class="feature-card">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Hackfest</h3>
+        <p>Hackfest — 2024</p>
+      </article>
+    </a>
+
+    <!-- Sertifikat 2 -->
+    <a href="https://drive.google.com/file/d/1LBV_CG2Mnrx09fL6tyE_C5iY8TYlqcGm/view?usp=sharing"
+       target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+      <article class="feature-card">
+        <i class="fa-solid fa-award"></i>
+        <h3>IGD 2024</h3>
+        <p>PGM — 2024</p>
+      </article>
+    </a>
+  </div>
+</section>
+
+
+    <!-- ===================== FOOTER / CONTACT ===================== -->
+    <footer id="contact" class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-user-circle"></i>
+            <span>Portofolio</span>
+          </div>
+          <p class="footer-description">
+            Siap kolaborasi untuk riset, pengembangan front-end, atau pembuatan materi presentasi.
+          </p>
+          <div class="social-links">
+            <a href="mailto:jeffrytbn1206@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/6281317115509" title="WhatsApp" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/Jeffrytbn" title="GitHub" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Kontak</h3>
+          <ul>
+            <li><a href="mailto:jeffrytbn1206@gmail.com">jeffrytbn1206@gmail.com</a></li>
+            <li><a href="https://wa.me/6281317115509" target="_blank" rel="noopener">+62 812-3456-7890</a></li>
+            <li>Balige, Indonesia</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Tautan</h3>
+          <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="y"></span> Jeffry Armando Tambunan — Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
